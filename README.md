@@ -11,6 +11,7 @@ Currently, two official plugins are available:
 
 Запуск
 cd react-app
+
 npm install
 
 npm run dev
