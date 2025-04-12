@@ -17,3 +17,5 @@ cd react-app
 npm install
 
 npm run dev
+
+<!-- https://www.youtube.com/watch?v=NDPiaUfsnLA&t=332s -->
