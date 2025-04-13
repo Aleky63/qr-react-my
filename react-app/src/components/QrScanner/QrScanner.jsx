@@ -22,6 +22,7 @@ export const QrScanner = () => {
       <p>{scanned}</p>
       <Scanner
         onScan={scanHandler}
+        // eslint-disable-next-line no-undef
         components={settings}
         styles={{ container: { width: 200 } }}
       />
