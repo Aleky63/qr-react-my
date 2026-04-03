@@ -12,8 +12,6 @@ Currently, two official plugins are available:
 Запуск
 cd qr-react-my
 
-cd react-app
-
 npm install
 
 npm run dev
