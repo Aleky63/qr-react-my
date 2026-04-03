@@ -7,14 +7,21 @@ export const QrScanner = () => {
   const [scanned, setScanned] = useState(null);
 
   const scanHandler = (result) => {
-    setScanned(result[0].rawValue);
+    if (!Array.isArray(result) || result.length === 0) {
+      return;
+    }
+
+    const value = result[0]?.rawValue;
+    if (!value) {
+      return;
+    }
+
+    setScanned(value);
 
     const prevData = JSON.parse(localStorage.getItem(SCAN_DATA) || "[]");
+    const nextData = [...prevData, value];
 
-    localStorage.setItem(
-      SCAN_DATA,
-      JSON.stringify([...prevData, result[0].rawValue])
-    );
+    localStorage.setItem(SCAN_DATA, JSON.stringify(nextData));
   };
 
   return (
