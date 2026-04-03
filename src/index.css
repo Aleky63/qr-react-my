@@ -37,6 +37,34 @@ body {
   object-fit: contain;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 20px;
+  box-sizing: border-box;
+}
+
+nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #1cdfe6;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #0e9ddf;
+  transform: translateY(-1px);
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -67,4 +95,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
